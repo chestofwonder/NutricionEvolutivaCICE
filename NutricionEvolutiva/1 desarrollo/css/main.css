@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-size: 120px;
+	font-style: normal;
+	/*margin-left: 20px;*/
+}
+
+.flaticon-home63{
+	position:absolute;
+	top:10px;
+	left:0px;
+	margin-left:2.5%;
+	color:black;
+	text-decoration:none;
+}
+	
+.flaticon-home63:before {
+	content: "\e000";
+}
+.flaticon-magnifier12:before {
+	content: "\e001";
+}
+.flaticon-menu48:before {
+	content: "\e002";
+}
+
+.flaticon-menu48:hover > ul{
+	background-color:black;
+}
+
+body{
+	font-size:1em;
+	font-family:'Open Sans', sans-serif;
+	text-align:center;
+}
+
+h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size:3em;
+	padding-top:45px;
+	padding-bottom:30px;
+}
+
+h1, h2{
+	text-transform:uppercase;
+}
+
+
+img{
+	max-width:100%;
+}
+
+ul{
+	list-style:none;
+}
+
+input[type="text"]{
+	/*float:left;*/
+	width:80%;
+}
+
+input[type="button"]{
+	/*float:left;*/
+	width:85px;
+}
+
+    /**********************************************************/
+/*#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}*/ 
+			
+			/*ul, ol {
+				list-style:none;
+			}*/
+			
+			/*.menu > li {
+				float:right;
+			}*/
+			
+			.menu li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.menu li a:hover {
+				background-color:#434343;
+			}
+			
+			.menu li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+				left:50px;
+				top:-10px;
+			}
+			
+			.menu li:hover > ul {
+				display:block;
+			}
+			
+			/*.menu li ul li {
+				position:relative;
+			}*/
+			
+			/*.nav li ul li ul {
+				right:140px;
+				top:-50px;
+			}*/
+			/**********************************************************/
+
+
+
+/*************************************/
+
+.clearfix{
+	clear:both;
+}
+
+/*************************************/
+
+#wrapper{
+	text-align:center;
+	width:95%;
+	margin: 0 auto;
+}
+/*
+#homeButton{
+	float:left;
+	width:10%;
+}
+
+#title{
+	float:left;
+	width:90%;
+}
+*/
+nav#mainMenu{
+	/*float:left;
+	width:10%;*/
+	position:absolute;
+	top:10px;
+	right:0px;
+	margin-right:2.5%;
+}
+
+#menu{
+	/*background-color:white;
+	position:absolute;
+	top:15px;
+	right:85px;
+	min-width:120px;*/
+}
+
+section#whatIsThis{
+	color:white;
+	background-color:#51A1B2;
+	padding-top:25px;
+	padding-bottom:10px;
+}
+
+section#whatIsThis p{
+	margin-bottom:15px;
+}
+
+
+/*width="190" height="126.5"*/
+
+@media screen (and min-width:321px){
+	
+	
+}
