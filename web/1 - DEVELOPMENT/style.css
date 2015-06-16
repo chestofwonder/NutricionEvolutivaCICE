@@ -71,9 +71,11 @@ margin-left: 20px;
 }
 .flaticon-menu48:before {
 	content: "\e001";
+	float:left;
 }
 .flaticon-purse10:before {
 	content: "\e002";
+	float:right;
 }
 /********************END ICONS*********************/
 
@@ -88,10 +90,45 @@ h1,h3{
 
 h3{
 	font-weight:900;
+	display: inline;
+}
+
+header{
+	text-align:center;
+}
+
+.show_mobile{
+	display:none;
+}
+
+.hidden_mobile{
+	display:inline;
+}
+
+.background_cyan{
+	background-color:#26c6da;
+	/*#00acc1;*/
+}
+
+.background_darkcyan{
+	background-color:#37474;
+}
+
+.white{
+	color:white;
 }
 
 
-
-@media screen and (max-width: 360px) {
-   
+@media screen and (max-width: 375px) {
+	.show_mobile{
+		display:inline;
+	}
+	.hidden_mobile{
+		display:none;
+	}
+	#wrapper{
+		/*width:90%;*/
+		padding: 0 5% 0 5%;
+		margin: 0 auto;
+	}
 }
