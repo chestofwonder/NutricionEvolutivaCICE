@@ -1,6 +1,6 @@
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100);
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 
 /*********************BEGIN RESET*********************/
@@ -71,17 +71,24 @@ margin-left: 20px;
 }
 .flaticon-menu48:before {
 	content: "\e001";
-	float:left;
+	color:white;
+	position:absolute;
+	left:0;
+	top:17px;
 }
 .flaticon-purse10:before {
 	content: "\e002";
-	float:right;
+	color:white;
+	position:absolute;
+	right:17px;;
+	top:17px;
 }
 /********************END ICONS*********************/
 
 body {
     font-size:1em;
-	font-family: 'Open Sans', sans-serif;
+	font-family:'Open Sans', sans-serif;
+	font-weight:100;
 }
 
 h1,h3{
@@ -90,7 +97,10 @@ h1,h3{
 
 h3{
 	font-weight:900;
-	display: inline;
+}
+
+img{
+	width:100%;
 }
 
 header{
@@ -105,29 +115,110 @@ header{
 	display:inline;
 }
 
-.background_cyan{
+.background_main{
 	background-color:#26c6da;
-	/*#00acc1;*/
 }
 
-.background_darkcyan{
-	background-color:#37474;
+.background_dark{
+	background-color:#374747;
 }
 
-.white{
+.header_title{
 	color:white;
 }
 
+.header_title a{
+	text-decoration:none;
+}
+
+.header_title a:visited{
+	color:white;
+}
+
+.price{
+	text-align:center;
+}
+
+#page_title{
+	padding:20px 0 20px 0;
+}
+
+/************MENU***********/
+
+#main_menu{
+	background-color:white;
+	width:80%;
+	height:100%;
+	position:absolute;
+	top:56px;
+	left:0px;
+	border:1px solid #CDCDCD;
+}
+
+#main_menu li{
+	display:block;
+	padding:35px 0px 35px 0px;
+}
+
+#main_menu a{
+		text-decoration:none;
+		color:black;
+}
+
+/**********END MENU*********/
+
+
+/**********SECTIONS********/
+
+.title_section{
+	padding:10px 15px 10px 15px;
+}
+
+.title_section p{
+	color:white;
+}
+
+/********END SECTIONS******/
+
+
+/*********ARTICLES********/
+
+article h2{
+	text-align:center;
+	font-size:1.2em;
+	padding:15px 0 10px 0;
+}
+
+/*******END ARTICLES******/
+
+
+/********ECOMMERCE********/
+
+.price input{
+	background-color:#11E200;
+	padding:15px 25px 15px 25px;
+	border-radius:10px;
+	font-size:1em;
+	font-family:'Open Sans', sans-serif;
+	font-weight:100;
+}
+
+/******END ECOMMERCE******/
 
 @media screen and (max-width: 375px) {
+	body{
+		font-size:1.2em;
+	}
+	
 	.show_mobile{
 		display:inline;
 	}
+	
 	.hidden_mobile{
 		display:none;
 	}
+	
 	#wrapper{
-		/*width:90%;*/
 		padding: 0 5% 0 5%;
 		margin: 0 auto;
 	}
