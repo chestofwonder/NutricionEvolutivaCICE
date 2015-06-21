@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -170,11 +170,15 @@ header{
 
 /**********SECTIONS********/
 
-.title_section{
-	padding:10px 15px 10px 15px;
+section{
+	padding:15px 15px 15px 15px;
 }
 
-.title_section p{
+.title_section{
+	text-align:center;
+}
+
+section p{
 	color:white;
 }
 
@@ -183,11 +187,19 @@ header{
 
 /*********ARTICLES********/
 
+article {
+	padding:15px 15px 15px 15px;
+}
+
 article h2{
-	text-align:center;
 	font-size:1.2em;
 	padding:15px 0 10px 0;
 }
+
+article p{
+	color:black;
+}
+
 
 /*******END ARTICLES******/
 
@@ -206,7 +218,7 @@ article h2{
 
 @media screen and (max-width: 375px) {
 	body{
-		font-size:1.2em;
+		font-size:1em;
 	}
 	
 	.show_mobile{
