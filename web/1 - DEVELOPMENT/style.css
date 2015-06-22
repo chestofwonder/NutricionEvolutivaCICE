@@ -99,12 +99,23 @@ h3{
 	font-weight:900;
 }
 
+#wrapper{
+	width:70%;
+	margin: 0 auto;
+}
+
 img{
 	width:100%;
 }
 
 header{
 	text-align:center;
+	color:white;
+	background-color:#26c6da;
+}
+
+.page_header{
+	background-color:#374747;
 }
 
 .show_mobile{
@@ -116,15 +127,15 @@ header{
 }
 
 .background_main{
-	background-color:#26c6da;
+	/*background-color:#26c6da;*/
 }
 
 .background_dark{
-	background-color:#374747;
+	/*background-color:#374747;*/
 }
 
 .header_title{
-	color:white;
+	
 }
 
 .header_title a{
@@ -230,7 +241,8 @@ article p{
 	}
 	
 	#wrapper{
-		padding: 0 5% 0 5%;
-		margin: 0 auto;
+		width: 100%;
+		/*padding: 0 5% 0 5%;
+		margin: 0 auto;*/
 	}
 }
