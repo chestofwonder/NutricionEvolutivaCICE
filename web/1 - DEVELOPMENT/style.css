@@ -68,6 +68,7 @@ font-style: normal;
 margin-left: 20px;
 }.flaticon-magnifying-glass6:before {
 	content: "\e000";
+	color:black;
 }
 .flaticon-menu48:before {
 	content: "\e001";
