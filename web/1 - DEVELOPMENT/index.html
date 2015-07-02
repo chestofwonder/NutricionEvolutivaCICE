@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" >
 <script src="js/jquery.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/shopping.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
 </head>
 
@@ -13,7 +14,8 @@
 <header class="page_header"> 
   <span class="show_mobile flaticon-menu48"></span>
 	<h3 id="page_title" class="header_title"><a href="index.html">NUTRICION EVOLUTIVA</a></h3>
-  <span class="show_mobile flaticon-purse10"></span>
+  <a href="ecommerce/shopping_cart.html"><span class="show_mobile flaticon-purse10"></span></a>
+  <span class="show_mobile shopping_cart_recount">0</span>
   </header>
   
   <nav id="main_menu" class="hidden_mobile">
@@ -35,8 +37,10 @@
 <section>
 	<article>
     <a href="blog/dietas_hipocaloricas.html">
+    <header>
 		<h2>Dietas hipocalóricas: ¿son una buena idea?</h2>
-    	<div>
+     </header>
+    	<div class="wrapper">
     		<figure>
         	<img src="blog/images/hipocaloric_diet_mobile.jpg" alt="Dietas hipocalóricas: ¿son una buena idea?" title="Dietas hipocalóricas: ¿son una buena idea?"/>
         	</figure>
@@ -64,7 +68,7 @@
         </a>
         <div class="price">
         	<label for="add_cart">15,69€</label><br/>
-        	<input type="button" name="add_cart" value="Añadir a la cesta" />
+        	<input type="button" class="add_cart" name="add_cart" value="Añadir a la cesta" />
         </div>
     </article>
 </section>
