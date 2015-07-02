@@ -1,7 +1,7 @@
 /* CSS Document */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:100);
-@import url(http://fonts.googleapis.com/css?family=Lato:900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 /*********************BEGIN RESET*********************/
 html, body, div, span, applet, object, iframe,
@@ -105,12 +105,21 @@ margin-left: 20px;
 		font-weight:100;
 	}
 
-	h1,h3{
+	h1, h2, h3{
 		font-family: 'Lato', sans-serif;
 	}
 
-	h3{
+	h1{
+		font-size:1.2em;
+		font-size:1.3em;
+	}
+	
+	h2{
 		font-weight:900;
+	}
+	
+	h3{
+		font-weight:600;
 	}
 	
 	img{
@@ -122,9 +131,14 @@ margin-left: 20px;
 		text-align:center;
 	}
 	
+	header a h2{
+		color:black;
+	}
+	
 	section header{
 		color:white;
-		background-color:#26c6da;
+		background-color:#00acc1;
+		/*#26c6da 00bcd4*/
 	}
 	
 	article header{
@@ -133,25 +147,45 @@ margin-left: 20px;
 		text-align:left;
 	}
 	
-	header h2{
+	article a{
 		text-decoration:none;
 	}
 	
-	header h2:visited{
-		text-decoration:none;
-	}
-
-	article h2{
-		font-size:1.2em;
-		padding:15px 0 10px 0;
-	}
-
 	article p{
 		color:black;
 	}
 	
 	.wrapper{
-		width:90%;
+		/*width:90%;*/
+	}
+	
+	.thumbnail header{
+		float:right;
+		width:56%;
+		margin:0px !important;
+		padding:0px !important;
+	}
+	
+	.thumbnail header h2{
+		text-align:left;
+	}
+	
+	.thumbnail .wrapper{
+		width:38%;
+		margin: 15px 2.5%;
+	}
+	
+	.thumbnail .wrapper figure img{
+		border: 1px solid #DCDCDC;
+	}
+	
+	.post_meta{
+		font-size:0.8em;
+		margin-top:8px;
+	}
+	
+	.post_meta p:first-child{
+		margin-bottom:8px;
 	}
 	
 	.page_header{
@@ -174,10 +208,20 @@ margin-left: 20px;
 		color:white;
 	}
 
-	.price{
-		text-align:center;
+	.thumbnail header .price label{
+		display:block;
+		margin: 10px 0px 12px 0px;
+		font-family: 'Lato', sans-serif;
+		font-weight:900;
 	}
-
+	
+	.thumbnail header .price input{
+		margin: 0px 0px 25px 0px;
+		background-color:#11E200;
+		padding:5px 10px;
+		font-size:1em;
+	}
+	
 	.shopping_cart_recount{
 		color: black;
 		position:absolute;
@@ -194,26 +238,20 @@ margin-left: 20px;
 		text-align:center;
 	}
 
-	.price input{
-		background-color:#11E200;
-		padding:15px 25px 15px 25px;
-		font-size:1em;
-		font-family:'Open Sans', sans-serif;
-		font-weight:100;
-	}
-
 	#page_title{
 		padding:5px 0;
 	}
 
 	#main_menu{
 		background-color:white;
-		width:80%;
-		height:240px;
+		width:100%;
+		/*height:220px;*/
 		position:absolute;
 		top:56px;
 		left:0px;
 		border:1px solid #CDCDCD;
+		text-align:center;
+		padding-bottom:25px;
 	}
 
 	#main_menu li{
