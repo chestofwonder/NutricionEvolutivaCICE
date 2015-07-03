@@ -1,6 +1,6 @@
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 /*********************BEGIN RESET*********************/
@@ -31,9 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
-ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -102,7 +99,7 @@ margin-left: 20px;
 	body {
     	font-size:1em;
 		font-family:'Open Sans', sans-serif;
-		font-weight:100;
+		font-weight:400;
 	}
 
 	h1, h2, h3{
@@ -110,8 +107,8 @@ margin-left: 20px;
 	}
 
 	h1{
-		font-size:1.2em;
 		font-size:1.3em;
+		font-weight:900;
 	}
 	
 	h2{
@@ -122,8 +119,20 @@ margin-left: 20px;
 		font-weight:600;
 	}
 	
+	p, li{
+		line-height: 1.4em;
+	}
+	
+	strong{
+		font-weight:600;
+	}
+	
 	img{
 		width:100%;
+	}
+	
+	ul, ol{
+		margin-left:20px;	
 	}
 	
 	header{
@@ -144,21 +153,36 @@ margin-left: 20px;
 	article header{
 		color:black;
 		background-color:white;
-		text-align:left;
 	}
 	
 	article a{
 		text-decoration:none;
 	}
 	
-	article p{
+	article .wrapper h2{
+		margin-top:45px;
+		font-size:1.2em;
+	}
+	
+	article .wrapper p{
 		color:black;
+		margin-top:15px;
+		margin-bottom:25px;
+	}
+	
+	article .wrapper li{
+		margin-top:25px;
+	}
+	
+	article .wrapper p a{
+		text-decoration:underline;
 	}
 	
 	.wrapper{
-		/*width:90%;*/
+		width:80%;
+		margin: 0 auto;
 	}
-	
+
 	.thumbnail header{
 		float:right;
 		width:56%;
@@ -182,6 +206,7 @@ margin-left: 20px;
 	.post_meta{
 		font-size:0.8em;
 		margin-top:8px;
+		text-align:left;
 	}
 	
 	.post_meta p:first-child{
@@ -208,18 +233,19 @@ margin-left: 20px;
 		color:white;
 	}
 
-	.thumbnail header .price label{
+	.product_thumbnail header .price p{
 		display:block;
 		margin: 10px 0px 12px 0px;
 		font-family: 'Lato', sans-serif;
-		font-weight:900;
+		font-weight:400;
 	}
 	
-	.thumbnail header .price input{
-		margin: 0px 0px 25px 0px;
-		background-color:#11E200;
-		padding:5px 10px;
-		font-size:1em;
+	.product_thumbnail header .price .add_cart{
+		background-color:#ffc107;
+		padding: 10px 10px;
+		width: 70%;
+		font-size:0.9em;
+		text-align:center;
 	}
 	
 	.shopping_cart_recount{
@@ -230,8 +256,9 @@ margin-left: 20px;
 	}
 
 	.product_thumbnail{
-		width:50%;
+		width:45%;
 		float:left;
+		margin: 5% 2%;
 	}
 	
 	.title_section{
