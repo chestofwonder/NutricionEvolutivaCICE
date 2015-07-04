@@ -66,6 +66,7 @@ margin-left: 20px;
 }.flaticon-magnifying-glass6:before {
 	content: "\e000";
 	color:black;
+	font-size:1.5em;
 }
 .flaticon-menu48:before {
 	content: "\e001";
@@ -272,22 +273,36 @@ margin-left: 20px;
 	#main_menu{
 		background-color:white;
 		width:100%;
-		/*height:220px;*/
 		position:absolute;
 		top:56px;
 		left:0px;
 		border:1px solid #CDCDCD;
-		text-align:center;
-		padding-bottom:25px;
+		text-align: center;
+		line-height: 3em;
+		font-size: 1.2em;
+	}
+	
+	#main_menu ul{
+		list-style:none;
+		margin:0;
+	}
+	
+	#main_menu ul li{
+		line-height: 3em;
 	}
 
-	#main_menu li{
-		display:block;
-		padding:15px 0px 15px 0px;
+	#main_menu input{
+		width:70%;
+		line-height: 1.2em;
+    	font-size: 1.2em;
+		margin: 20px 0px;
 	}
-
+	
 	#main_menu a{
 		text-decoration:none;
 		color:black;
+		display:block;
+		padding: 12px 30px;
+		border:1px solid #D8D8D8;
 	}	
 }
