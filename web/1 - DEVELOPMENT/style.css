@@ -145,10 +145,13 @@ margin-left: 20px;
 		color:black;
 	}
 	
-	section header{
+	section header, article section header{
 		color:white;
 		background-color:#00acc1;
-		/*#26c6da 00bcd4*/
+	}
+	
+	article section header{
+		margin-top:25px;
 	}
 	
 	article header{
@@ -179,11 +182,74 @@ margin-left: 20px;
 		text-decoration:underline;
 	}
 	
+	table{
+		margin:20px 0px;
+		line-height: 1.4em;
+	}
+	
+	td{
+		padding-right: 20px;
+	}
+	
 	.wrapper{
 		width:80%;
 		margin: 0 auto;
 	}
-
+	
+	.product{
+		/*box-shadow: 0px 5px 10px -5px #888;*/
+		border-bottom: 1px solid #DDD;
+	}
+	
+	.product header{
+		float:right;
+		width: 50%;
+		padding: 8px;
+	}
+	
+	.product .wrapper figure{
+		width: 40%;
+		margin: 15px 0px 0px 0px;
+	}
+	
+	#product_recount{
+		padding-top:15px;
+		text-align:center;
+	}
+	
+	.price p{
+		display:block;
+		margin: 10px 0px 12px 0px;
+		font-family: 'Lato', sans-serif;
+		font-weight:400;
+	}
+	
+	.price .add_cart, .checkout{
+		background-color:#ffc107;
+		padding: 10px 10px;
+		width: 70%;
+		font-size:0.9em;
+		text-align:center;
+		margin: 0px auto;
+	}
+	
+	.checkout{
+		margin: 20px auto;
+	}
+	
+	.quantity span{
+		padding:10px 16px;
+		background-color:#006064;
+		color:white;
+	}
+	
+	.quantity input{
+		text-align:right;
+		width:30px;
+		margin: 0px 20px;
+		font-size:1.3em;
+	}
+	
 	.thumbnail header{
 		float:right;
 		width:56%;
@@ -201,7 +267,7 @@ margin-left: 20px;
 	}
 	
 	.thumbnail .wrapper figure img{
-		border: 1px solid #DCDCDC;
+		border: 1px solid #DDDDDD;
 	}
 	
 	.post_meta{
@@ -234,19 +300,8 @@ margin-left: 20px;
 		color:white;
 	}
 
-	.product_thumbnail header .price p{
-		display:block;
-		margin: 10px 0px 12px 0px;
-		font-family: 'Lato', sans-serif;
-		font-weight:400;
-	}
-	
-	.product_thumbnail header .price .add_cart{
-		background-color:#ffc107;
-		padding: 10px 10px;
-		width: 70%;
-		font-size:0.9em;
-		text-align:center;
+	.product_thumbnail a header h2{
+		height:50px;
 	}
 	
 	.shopping_cart_recount{
@@ -276,7 +331,7 @@ margin-left: 20px;
 		position:absolute;
 		top:56px;
 		left:0px;
-		border:1px solid #CDCDCD;
+		border:1px solid #DDD;
 		text-align: center;
 		line-height: 3em;
 		font-size: 1.2em;
@@ -303,6 +358,6 @@ margin-left: 20px;
 		color:black;
 		display:block;
 		padding: 12px 30px;
-		border:1px solid #D8D8D8;
+		border:1px solid #DDD;
 	}	
 }

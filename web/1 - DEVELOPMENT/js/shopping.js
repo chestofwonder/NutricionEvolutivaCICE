@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 	var cart_products = 0;
 	jQuery(".shopping_cart_recount").hide();
 	
-	jQuery("#product_recount").text(cart_products + " productos en la cesta");
+	//jQuery("#product_recount").text(cart_products + " productos en la cesta");
 	
 		jQuery(".add_cart").click(function(){
 				cart_products++; 

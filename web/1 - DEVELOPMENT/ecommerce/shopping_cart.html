@@ -31,31 +31,37 @@
 	<header>
 		<h1>Cesta de la compra</h1>
     </header>
-     <div id="product_recount"></div>
-     <article>
-	<ul>
-    	<li><figure>
-            	<img src="images/coconut_oil_mobile.jpg" alt="Aceite de coco ecológico" title="Aceite de coco ecológico" class="product_thumbnail" />
-            </figure></li>
-        	<li>Aceite de coco ecológico</li>
-            <li>15,65 €</li>
-            <li>Cantidad: 1</li>
-            <li><input type="button" value="Eliminar" /></li>
-    </ul>
-    <div class="clearfix"></div>
-     </article>
-        <article>
-	<ul>
-    	<li><figure>
-            	<img src="images/coconut_oil_mobile.jpg" alt="Aceite de coco ecológico" title="Aceite de coco ecológico" class="product_thumbnail" />
-            </figure></li>
-        	<li>Aceite de coco ecológico</li>
-            <li>15,65 €</li>
-            <li>Cantidad: 1</li>
-            <li><input type="button" value="Eliminar" /></li>
-    </ul>
-    <div class="clearfix"></div>
-     </article>
+     <div id="product_recount">2 artículos en la cesta</div>
+      <div class="checkout">Finzalizar la compra</div>
+      <article class="product">
+    <header>
+    	<h1>Aceite de coco ecológico</h1>
+         <div class="price">
+        	<p>3,50€</p>
+            <div class="quantity"><span>-</span><input type="text" value="1" /><span>+</span></div>
+        </div>
+    </header>
+    	<div class="wrapper">
+    		<figure>
+        	<img src="images/coconut_oil_mobile.jpg" alt="Aceite de coco ecológico" title="Aceite de coco ecológico"/>
+        	</figure>
+        </div>
+   </article>
+        <article class="product">
+    <header>
+    	<h1>Yogurt de leche de vaca ecológico</h1>
+        <div class="price">
+        	<p>3,50€</p>
+            <div class="quantity"><span>-</span><input type="text" value="1" /><span>+</span></div>
+        </div>
+    </header>
+    	 <div class="wrapper">
+    		<figure>
+        	<img src="images/cow_yogurt_mobile.jpg" alt="Yogurt de leche de vaca ecológico" title="Yogurt de leche de vaca ecológico"/>
+        	</figure>
+        </div>
+   </article>
+   <div class="wrapper">
     <table>
     	<tr>
     		<td>Subtotal</td><td>35,60 €</td>
@@ -64,16 +70,17 @@
         	<td>Gastos de envío</td><td>2,50 €</td>
     	</tr>
      </table>
+     </div>
      <section>
         <header>Información de envío</header>
-        <ul>
-        	<li>Calle inventada, 1</li>
-            <li>28080 Madrid, España</li>
-        </ul>
-        <p>Correo express</p>
-        <p>El envío tardará entre 2 y 3 días</p>
+         <div class="wrapper">
+        	<p>Calle inventada, 1</p>
+            <p>28080 Madrid, España</p>
+        	<p>Correo express</p>
+        	<p>El envío tardará entre 2 y 3 días</p>
+         </div>
      </section>
-    <div><input type="button" value="Pagar" /></div>
+    <div class="checkout">Finzalizar la compra</div>
 </section>
 </body>
 </html>
