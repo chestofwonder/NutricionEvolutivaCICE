@@ -97,6 +97,15 @@ margin-left: 20px;
 }
 
 @media screen and (max-width: 767px) {
+	.show_mobile{
+		display:inline;
+	}
+	
+	.hidden_mobile{
+		display:none;
+	}
+}
+	
 	body {
     	font-size:1em;
 		font-family:'Open Sans', sans-serif;
@@ -283,14 +292,6 @@ margin-left: 20px;
 	.page_header{
 		background-color:#374747;
 	}
-
-	.show_mobile{
-		display:inline;
-	}
-	
-	.hidden_mobile{
-		display:none;
-	}
 	
 	.header_title a{
 		text-decoration:none;
@@ -360,4 +361,10 @@ margin-left: 20px;
 		padding: 12px 30px;
 		border:1px solid #DDD;
 	}	
+/*}*/
+
+@media screen and (min-width: 768px) {
+	.page_header{
+		text-align:left;
+	}
 }
