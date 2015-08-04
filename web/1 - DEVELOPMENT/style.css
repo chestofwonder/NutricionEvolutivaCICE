@@ -84,6 +84,9 @@ margin-left: 20px;
 }
 /********************END ICONS*********************/
 
+
+
+/*****GENERALES******/
 .clearfix{
 	clear:both;
 }
@@ -95,6 +98,21 @@ margin-left: 20px;
 .hidden_mobile{
 	display:inline;
 }
+
+#main_menu ul{
+		list-style:none;
+		margin:0;
+	}
+
+#main_menu a{
+		text-decoration:none;
+		display:block;
+	}	
+/***** FIN GENERALES******/
+
+
+
+
 
 @media screen and (max-width: 767px) {
 	.show_mobile{
@@ -325,7 +343,7 @@ margin-left: 20px;
 	#page_title{
 		padding:5px 0;
 	}
-
+/*
 	#main_menu{
 		background-color:white;
 		width:100%;
@@ -338,10 +356,7 @@ margin-left: 20px;
 		font-size: 1.2em;
 	}
 	
-	#main_menu ul{
-		list-style:none;
-		margin:0;
-	}
+
 	
 	#main_menu ul li{
 		line-height: 3em;
@@ -353,18 +368,73 @@ margin-left: 20px;
     	font-size: 1.2em;
 		margin: 20px 0px;
 	}
-	
 	#main_menu a{
-		text-decoration:none;
-		color:black;
-		display:block;
-		padding: 12px 30px;
 		border:1px solid #DDD;
-	}	
+			padding: 12px 30px;
+			color:black;
+			
+	}*/
+	
 /*}*/
+
+/*****FIN MOVIL*****/
+
+
+
 
 @media screen and (min-width: 768px) {
 	.page_header{
 		text-align:left;
 	}
+}
+
+/*****FIN IPAD*****/
+
+
+
+@media screen and (min-width: 1024px) {
+	.page_header{
+		height:30px;
+	}
+	
+	#page_title{
+		float:left;
+	}
+	
+	#main_menu{
+		
+			/*background-color:#374747;	
+		width:100%;
+		position:absolute;
+		top:50px;
+		border:1px solid #DDD;
+		text-align: center;
+		line-height: 3em;
+		font-size: 1.2em;*/
+	}
+	
+	#main_menu a{
+		color:white;
+	}
+	
+	#main_menu ul{
+
+	
+	}
+	#main_menu ul li{
+		float:right;
+		width:10%;
+		background-color:#374747;
+		
+	
+	}
+
+	#main_menu input{
+		/*width:70%;
+		line-height: 1.2em;
+    	font-size: 1.2em;
+		margin: 20px 0px;*/
+	}
+	
+	
 }
