@@ -521,5 +521,33 @@ margin-left: 20px;
 		margin: 45px auto;
 	}
 	
+	.slider{
+		width:200px;
+		height:200px;
+		border:1px black solid;
+		overflow:hidden;
+		margin:0 auto;
+	}
+	
+	.slides {
+		
+		display:block;
+		width:800px;
+		height:200px;
+		margin:0px;
+		padding:0px;
+	}
+	
+	.slides li{
+		list-style:none;
+		float:left;
+		width:200px;
+		height:200px;
+	}
+	
+	.slides li img{
+		width:200px;
+		height:200px;
+	}
 	
 }
