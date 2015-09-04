@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrición Evolutiva</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
+</head>
+
+<body>
+ <script type="text/template" id="search_template">
+ <label> <%= search_label %> </label>
+ <input type="text" id="search_input" />
+ <input type="button" id="search_button" value="Search" />
+ </script>
+
+ <div id="search_container"></div>
+
+ <script type="text/javascript">
+ var Recipe = Backbone.Model.extend({
+    initialize: function(){
+        console.log("receta inicializada");
+    },
+    defaults : {
+       id : false,
+       name : "hoola"
+   },
+
+   url : function() {
+    alert(this.name);
+    return this.id ? '/Recipe/' + this.id : '/Recipe'; 
+} 
+
+});
+
+ var SearchView = Backbone.View.extend({
+    initialize: function(){
+      this.render();
+  },
+  render: function(){
+      var variables = { search_label: "My Search" };
+      var template = _.template( $("#search_template").html())(variables);
+      this.$el.html( template );
+  },
+  events: {
+      "click input[type=button]": "doSearch"  
+  },
+  doSearch: function( event ){
+      alert( "Search for " + $("#search_input").val() );
+  }
+});
+
+ var receta1 = new Recipe();
+ var search_view = new SearchView({ el: $("#search_container") });
+
+receta1.get({ id: 12, name: "Node Sample in Backbone" });
+
+ receta1.save({
+    success: function (user) {
+        alert(user.toJSON());
+    }
+})
+
+ </script>
+</body>
